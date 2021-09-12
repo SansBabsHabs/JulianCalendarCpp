@@ -26,23 +26,24 @@ void displayTitle() {
 
 
 void displayNumbers() {
-	int currentAdd = 0;
+	int daysPrevMonth = 0;	//
 	int numOfDays = 0;
 	int currentMonth = 0;
 	for (numOfDays = 1; numOfDays <= MAX_DAY; numOfDays++) {
 		setWidth();
-		currentAdd = 0;
+		daysPrevMonth = 0;
 		cout << numOfDays << " ";
 
 		for (currentMonth = 1; currentMonth <= (numberOfMonths); currentMonth++) {
 			setWidth();
 			if (numOfDays <= MONTH_LENGTH[currentMonth-1]) {
-				cout << numOfDays + currentAdd << " ";
+				cout << numOfDays + daysPrevMonth << " ";
 			}
 			else {
+				//print "000" if the day of the year does not exist
 				cout << "000" << " ";
 			}
-			currentAdd += MONTH_LENGTH[currentMonth-1];
+			daysPrevMonth += MONTH_LENGTH[currentMonth-1];
 		}
 		
 		setWidth();
