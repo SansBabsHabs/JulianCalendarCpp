@@ -24,6 +24,7 @@
     <ProjectGuid>{e5e81f3d-5be4-473d-a0f2-3dece9c683ad}</ProjectGuid>
     <RootNamespace>JulianCalendarCpp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>JulianCalendar</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
